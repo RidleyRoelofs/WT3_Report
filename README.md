@@ -3,8 +3,6 @@ This report will go over the topics that I researched as part of my Fall 23 NSER
 
 I spent the first part of my work term looking into software to simulate quantum circuits and quantum systems. I decided to focus on learning PennyLane, which is a Python library that allows for the development of quantum circuits. These circuits can either be run on a real quantum computer, or simulated. PennyLane offers tutorials and documentation for the library which greatly aided my ability to feel comfortable using the software.
 
-Quantum computing has promising applications in being able to simulate quantum systems. Take a quantum system like a molecule. The interactions within the molecule can be reflected within a quantum computer by a series of quantum gates. And there are algorithms that will work on circuits with a low depth and low number of gates. These are called Noisy Intermediate Scale Quantum (NISQ) devices.
-
 After some work getting familiar with PennyLane and the problem of approximating ground states of molecules, I wrote up a guide to follow along with my work. It has been replicated below.
 
 # Variational Quantum Eigensolver
@@ -139,7 +137,7 @@ for i in range(max_iterations):
 We then can plot the normalized feature vector to see what the VQE produced.
 ![Image](img/img.png)
 
-It looks very similar to what we would expect, so we would also like to get verify that the eigenvalue is close to pi^2. Indeed, when we solve for the eigen value we get a value of 9.5274 which approximates pi^2.
+It looks very similar to what we would expect, so we would also like to get verify that the eigenvalue is close to pi^2. Indeed, when we solve for the eigenvalue we get a value of 9.5274 which approximates pi^2.
 
 # Back to Hydrogen
 After doing work with a much simpler quantum system, I tried to understand the computation being fone for the hydrogen VQE. A lot of which is easily missed when working with PennyLane's interface. My intial investigation was into the use of guassian functions to approximate the wavefunctions of atomic orbitals.
