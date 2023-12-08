@@ -117,7 +117,6 @@ print("\n" f"Optimal value of the circuit parameter = {angle[-1]}")
 
 After 19 iterations we converge to the final ground-state energy. `Final value of the ground-state energy = -0.46985398 Ha`.
 
-#%% md
 # Variational Quantum Eigensolver - Infinite Potential Well
 
 After working through VQE for a molecule, Dr. Dimopoulos suggested further investigation into even simpler quantum systems. I wanted to take the infinite potential well and solve for an approximate minimum energy eigenstate. This would be analogous to taking the hydrogen potential, and solving for an approximate ground state.
@@ -161,3 +160,4 @@ def psi_2p_z(x, y, z):
     r = np.sqrt(x**2 + y**2 + z**2)
     return (z / a0) * np.exp(-r / (2 * a0)) / (8 * np.sqrt(np.pi) * a0**5)
 ~~~
+
